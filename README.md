@@ -22,6 +22,7 @@ namespace SwissArmy.Modules
 ```
 
 Your "Run()"-Method is the method that will be triggered while calling it.
+
 **Also you can receive unlimited string parameters with your Run()-Method**
 
 

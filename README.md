@@ -46,6 +46,6 @@ modInit.RunModule();
 For passing some parameters to your new module just use the following code before you call the "RunModule()"-Method.
 
 ```
-//AddDialog(bool required, string DialogTitle, string DialogPrompt, string DefaultText (optional)
+//AddDialog(bool isRequired, string DialogTitle, string DialogPrompt, string DefaultText (optional)
 modInit.AddDialog(true, "Base Mover", "Enter your basepath");
 ```

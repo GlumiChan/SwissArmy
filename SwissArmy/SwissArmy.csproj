@@ -7,7 +7,7 @@
     <ProjectGuid>{3A5CEA19-335C-4DA9-B571-5B79A7D1DAA2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SwissArmy</RootNamespace>
-    <AssemblyName>MetroUI-Template</AssemblyName>
+    <AssemblyName>SwissArmy</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

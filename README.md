@@ -1,6 +1,14 @@
 # SwissArmy
-A modular based tool to help you out in your everyday life :)
+A modular based tool to help you out in your everyday life.
 
+Concept:
+This piece of software runs silently in the right corner of your taskbar, and contains every module that was programmed for it.
+
+By right clicking the SwissArmy-Icon you open the Contextmenu of it.
+
+Here you can choose any available module from the "Modules-List"
+
+![image](http://fs5.directupload.net/images/170414/ay4vgg9b.jpg)
 
 
 ## Creating your own module

@@ -40,11 +40,13 @@
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.modulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.basepathMoverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iPLookupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pHPDocSearchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.iPLookupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.CloseButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visitCoderpageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NotifyMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,9 +65,10 @@
             this.toolStripMenuItem4,
             this.modulesToolStripMenuItem,
             this.toolStripMenuItem1,
+            this.aboutToolStripMenuItem,
             this.CloseButton});
             this.NotifyMenuStrip.Name = "NotifyMenuStrip";
-            this.NotifyMenuStrip.Size = new System.Drawing.Size(161, 110);
+            this.NotifyMenuStrip.Size = new System.Drawing.Size(161, 132);
             // 
             // toolStripMenuItem2
             // 
@@ -130,6 +133,14 @@
             this.basepathMoverToolStripMenuItem.Text = "Basepath Mover";
             this.basepathMoverToolStripMenuItem.Click += new System.EventHandler(this.basepathMoverToolStripMenuItem_Click);
             // 
+            // iPLookupToolStripMenuItem
+            // 
+            this.iPLookupToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iPLookupToolStripMenuItem.Name = "iPLookupToolStripMenuItem";
+            this.iPLookupToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.iPLookupToolStripMenuItem.Text = "IP Lookup";
+            this.iPLookupToolStripMenuItem.Click += new System.EventHandler(this.iPLookupToolStripMenuItem_Click);
+            // 
             // pHPDocSearchToolStripMenuItem1
             // 
             this.pHPDocSearchToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,14 +157,6 @@
             this.toolStripMenuItem5.Text = "Youtube Download";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
-            // iPLookupToolStripMenuItem
-            // 
-            this.iPLookupToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iPLookupToolStripMenuItem.Name = "iPLookupToolStripMenuItem";
-            this.iPLookupToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.iPLookupToolStripMenuItem.Text = "IP Lookup";
-            this.iPLookupToolStripMenuItem.Click += new System.EventHandler(this.iPLookupToolStripMenuItem_Click);
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -161,16 +164,34 @@
             // 
             // CloseButton
             // 
+            this.CloseButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(160, 22);
             this.CloseButton.Text = "Beenden";
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.visitCoderpageToolStripMenuItem});
+            this.aboutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // visitCoderpageToolStripMenuItem
+            // 
+            this.visitCoderpageToolStripMenuItem.Name = "visitCoderpageToolStripMenuItem";
+            this.visitCoderpageToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.visitCoderpageToolStripMenuItem.Text = "Visit Homepage";
+            this.visitCoderpageToolStripMenuItem.Click += new System.EventHandler(this.visitCoderpageToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(10, 10);
+            this.ClientSize = new System.Drawing.Size(349, 185);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -198,6 +219,8 @@
         private System.Windows.Forms.ToolStripMenuItem pHPDocSearchToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem iPLookupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visitCoderpageToolStripMenuItem;
     }
 }
 

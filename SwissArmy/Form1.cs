@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using SwissArmy.Modules;
+using System.Diagnostics;
 
 namespace SwissArmy
 {
@@ -88,5 +89,14 @@ namespace SwissArmy
         }
         #endregion
 
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("SwissArmy " + Settings.VERSION + Environment.NewLine + "Coder: http://boehmer.pro/");
+        }
+
+        private void visitCoderpageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://boehmer.pro");
+        }
     }
 }

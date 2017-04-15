@@ -16,7 +16,7 @@ namespace SwissArmy
         {
             this.Text = Settings.SOFTWARE_NAME + " " + Settings.VERSION;
             MainNotify.Text = Settings.SOFTWARE_NAME + " " + Settings.VERSION;
-
+            Core.Init(this);
             Core.RunThread(HideThis);
         }
         private void HideThis()
@@ -87,13 +87,19 @@ namespace SwissArmy
             modInit.AddDialog(false, "IP Lookup", "Enter IP", def);
             modInit.RunModule();
         }
+
+        private void spotifyDownloadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Management<SpotifyDownload> modInit = Management<SpotifyDownload>.InitModule();
+            modInit.AddDialog(true, "Spotify Download", "Enter Spotifylink");
+            modInit.RunModule();
+        }
         #endregion
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("SwissArmy " + Settings.VERSION + Environment.NewLine + "Coder: http://boehmer.pro/");
         }
-
         private void visitCoderpageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("http://boehmer.pro");

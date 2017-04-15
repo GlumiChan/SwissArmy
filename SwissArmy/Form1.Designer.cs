@@ -44,9 +44,10 @@
             this.pHPDocSearchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.CloseButton = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visitCoderpageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CloseButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.spotifyDownloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NotifyMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +69,7 @@
             this.aboutToolStripMenuItem,
             this.CloseButton});
             this.NotifyMenuStrip.Name = "NotifyMenuStrip";
-            this.NotifyMenuStrip.Size = new System.Drawing.Size(161, 132);
+            this.NotifyMenuStrip.Size = new System.Drawing.Size(161, 110);
             // 
             // toolStripMenuItem2
             // 
@@ -119,6 +120,7 @@
             this.basepathMoverToolStripMenuItem,
             this.iPLookupToolStripMenuItem,
             this.pHPDocSearchToolStripMenuItem1,
+            this.spotifyDownloadToolStripMenuItem,
             this.toolStripMenuItem5});
             this.modulesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modulesToolStripMenuItem.Name = "modulesToolStripMenuItem";
@@ -162,14 +164,6 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(157, 6);
             // 
-            // CloseButton
-            // 
-            this.CloseButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(160, 22);
-            this.CloseButton.Text = "Beenden";
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
-            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -187,6 +181,22 @@
             this.visitCoderpageToolStripMenuItem.Text = "Visit Homepage";
             this.visitCoderpageToolStripMenuItem.Click += new System.EventHandler(this.visitCoderpageToolStripMenuItem_Click);
             // 
+            // CloseButton
+            // 
+            this.CloseButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(160, 22);
+            this.CloseButton.Text = "Beenden";
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
+            // spotifyDownloadToolStripMenuItem
+            // 
+            this.spotifyDownloadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spotifyDownloadToolStripMenuItem.Name = "spotifyDownloadToolStripMenuItem";
+            this.spotifyDownloadToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.spotifyDownloadToolStripMenuItem.Text = "Spotify Download";
+            this.spotifyDownloadToolStripMenuItem.Click += new System.EventHandler(this.spotifyDownloadToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,9 +213,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.NotifyIcon MainNotify;
-        private System.Windows.Forms.ContextMenuStrip NotifyMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem CloseButton;
         private System.Windows.Forms.ToolStripMenuItem Generator_Button;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
@@ -221,6 +228,9 @@
         private System.Windows.Forms.ToolStripMenuItem iPLookupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visitCoderpageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem spotifyDownloadToolStripMenuItem;
+        internal System.Windows.Forms.NotifyIcon MainNotify;
+        internal System.Windows.Forms.ContextMenuStrip NotifyMenuStrip;
     }
 }
 

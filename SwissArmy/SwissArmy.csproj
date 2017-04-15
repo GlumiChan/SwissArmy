@@ -71,6 +71,7 @@
     <Compile Include="Modules\IPLookup.cs" />
     <Compile Include="Modules\Management.cs" />
     <Compile Include="Modules\PHPDocs.cs" />
+    <Compile Include="Modules\SpotifyDownload.cs" />
     <Compile Include="Modules\YoutubeDownloader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Security.Cryptography;
 using System.Text;
@@ -13,7 +14,7 @@ namespace SwissArmy
     {
         #region Declatarion Stuff
         public static WebClient client = null;
-        private static Form1 main;
+        public static Form1 main;
         private static Dictionary<double, Thread> threadPool = new Dictionary<double, Thread>();
         private static ManualResetEvent syncEvent = new ManualResetEvent(false);
         #endregion
@@ -55,10 +56,15 @@ namespace SwissArmy
         {
             try
             {
-                Settings.client = new WebClient();
-                var _with1 = Settings.client;
-                _with1.Proxy = null;
-                string output = Settings.client.DownloadString(url);
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.AllowAutoRedirect = true;
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+                Stream receiveStream = response.GetResponseStream();
+                StreamReader readStream = new StreamReader(receiveStream, Encoding.UTF8);
+
+
+                string output = readStream.ReadToEnd();
                 return output;
             }
             catch
@@ -66,6 +72,30 @@ namespace SwissArmy
                 return "";
             }
         }
+        public static string GetLocationHeader(string url, CookieContainer con = null)
+        {
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.UserAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0";
+                request.CookieContainer = con == null ? new CookieContainer() : con;
+                request.AllowAutoRedirect = false;
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                foreach (string header in response.Headers.Keys)
+                {
+                    if (header == "Location")
+                    {
+                        return response.Headers[header];
+                    }
+                }
+                return "";
+            }
+            catch
+            {
+                return "";
+            }
+        }
+
         public static bool IsIP(string s)
         {
             IPAddress address;

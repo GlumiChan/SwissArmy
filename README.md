@@ -1,4 +1,4 @@
-# SwissArmy
+## [Download latest version](https://github.com/GlumiChan/SwissArmy/releases/download/1.0/SwissArmy.exe)
 A modular based tool to help you out in your everyday life.
 
 Concept:

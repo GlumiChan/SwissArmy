@@ -11,7 +11,7 @@ Here you can choose any available module from the "Modules-List"
 ![image](http://fs5.directupload.net/images/170414/ay4vgg9b.jpg)
 
 
-## Creating your own module
+## Creating a new module
 
 ###  Creating the Module 
 Create a new class into the "Modules"-Folder and use this template for it:
@@ -46,6 +46,6 @@ modInit.RunModule();
 For passing some parameters to your new module just use the following code before you call the "RunModule()"-Method.
 
 ```
-//AddDialog(bool required, string DialogTitle, string DialogPrompt, string DefaultText (optional)
+//AddDialog(bool isRequired, string DialogTitle, string DialogPrompt, string DefaultText (optional)
 modInit.AddDialog(true, "Base Mover", "Enter your basepath");
 ```

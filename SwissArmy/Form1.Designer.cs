@@ -42,12 +42,13 @@
             this.basepathMoverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iPLookupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pHPDocSearchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.spotifyDownloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visitCoderpageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CloseButton = new System.Windows.Forms.ToolStripMenuItem();
-            this.spotifyDownloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.speedtestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NotifyMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,12 +70,12 @@
             this.aboutToolStripMenuItem,
             this.CloseButton});
             this.NotifyMenuStrip.Name = "NotifyMenuStrip";
-            this.NotifyMenuStrip.Size = new System.Drawing.Size(161, 110);
+            this.NotifyMenuStrip.Size = new System.Drawing.Size(181, 132);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(157, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
             // 
             // Generator_Button
             // 
@@ -84,7 +85,7 @@
             this.generateString10LenMD5ToolStripMenuItem,
             this.generateString10LenSHA1ToolStripMenuItem});
             this.Generator_Button.Name = "Generator_Button";
-            this.Generator_Button.Size = new System.Drawing.Size(160, 22);
+            this.Generator_Button.Size = new System.Drawing.Size(180, 22);
             this.Generator_Button.Text = "String Generator";
             this.Generator_Button.Click += new System.EventHandler(this.Generator_Button_Click);
             // 
@@ -112,7 +113,7 @@
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(157, 6);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(177, 6);
             // 
             // modulesToolStripMenuItem
             // 
@@ -121,17 +122,18 @@
             this.iPLookupToolStripMenuItem,
             this.pHPDocSearchToolStripMenuItem1,
             this.spotifyDownloadToolStripMenuItem,
-            this.toolStripMenuItem5});
+            this.toolStripMenuItem5,
+            this.speedtestToolStripMenuItem});
             this.modulesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modulesToolStripMenuItem.Name = "modulesToolStripMenuItem";
-            this.modulesToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.modulesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modulesToolStripMenuItem.Text = "Modules";
             // 
             // basepathMoverToolStripMenuItem
             // 
             this.basepathMoverToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.basepathMoverToolStripMenuItem.Name = "basepathMoverToolStripMenuItem";
-            this.basepathMoverToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.basepathMoverToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.basepathMoverToolStripMenuItem.Text = "Basepath Mover";
             this.basepathMoverToolStripMenuItem.Click += new System.EventHandler(this.basepathMoverToolStripMenuItem_Click);
             // 
@@ -139,7 +141,7 @@
             // 
             this.iPLookupToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iPLookupToolStripMenuItem.Name = "iPLookupToolStripMenuItem";
-            this.iPLookupToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.iPLookupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iPLookupToolStripMenuItem.Text = "IP Lookup";
             this.iPLookupToolStripMenuItem.Click += new System.EventHandler(this.iPLookupToolStripMenuItem_Click);
             // 
@@ -147,22 +149,30 @@
             // 
             this.pHPDocSearchToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pHPDocSearchToolStripMenuItem1.Name = "pHPDocSearchToolStripMenuItem1";
-            this.pHPDocSearchToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
+            this.pHPDocSearchToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.pHPDocSearchToolStripMenuItem1.Text = "PHP Doc Search";
             this.pHPDocSearchToolStripMenuItem1.Click += new System.EventHandler(this.pHPDocSearchToolStripMenuItem1_Click);
+            // 
+            // spotifyDownloadToolStripMenuItem
+            // 
+            this.spotifyDownloadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spotifyDownloadToolStripMenuItem.Name = "spotifyDownloadToolStripMenuItem";
+            this.spotifyDownloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.spotifyDownloadToolStripMenuItem.Text = "Spotify Download";
+            this.spotifyDownloadToolStripMenuItem.Click += new System.EventHandler(this.spotifyDownloadToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(176, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem5.Text = "Youtube Download";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(157, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // aboutToolStripMenuItem
             // 
@@ -170,7 +180,7 @@
             this.visitCoderpageToolStripMenuItem});
             this.aboutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -185,17 +195,17 @@
             // 
             this.CloseButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(160, 22);
+            this.CloseButton.Size = new System.Drawing.Size(180, 22);
             this.CloseButton.Text = "Beenden";
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
-            // spotifyDownloadToolStripMenuItem
+            // speedtestToolStripMenuItem
             // 
-            this.spotifyDownloadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spotifyDownloadToolStripMenuItem.Name = "spotifyDownloadToolStripMenuItem";
-            this.spotifyDownloadToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.spotifyDownloadToolStripMenuItem.Text = "Spotify Download";
-            this.spotifyDownloadToolStripMenuItem.Click += new System.EventHandler(this.spotifyDownloadToolStripMenuItem_Click);
+            this.speedtestToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.speedtestToolStripMenuItem.Name = "speedtestToolStripMenuItem";
+            this.speedtestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.speedtestToolStripMenuItem.Text = "Speedtest";
+            this.speedtestToolStripMenuItem.Click += new System.EventHandler(this.speedtestToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -231,6 +241,7 @@
         private System.Windows.Forms.ToolStripMenuItem spotifyDownloadToolStripMenuItem;
         internal System.Windows.Forms.NotifyIcon MainNotify;
         internal System.Windows.Forms.ContextMenuStrip NotifyMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem speedtestToolStripMenuItem;
     }
 }
 

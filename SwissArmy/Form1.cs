@@ -104,5 +104,11 @@ namespace SwissArmy
         {
             Process.Start("http://boehmer.pro");
         }
+
+        private void speedtestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Management<Speedtest> modInit = Management<Speedtest>.InitModule();
+            modInit.RunModule();
+        }
     }
 }

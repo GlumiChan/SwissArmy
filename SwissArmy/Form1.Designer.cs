@@ -44,11 +44,12 @@
             this.pHPDocSearchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.spotifyDownloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.speedtestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visitCoderpageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CloseButton = new System.Windows.Forms.ToolStripMenuItem();
-            this.speedtestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NotifyMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,7 +124,8 @@
             this.pHPDocSearchToolStripMenuItem1,
             this.spotifyDownloadToolStripMenuItem,
             this.toolStripMenuItem5,
-            this.speedtestToolStripMenuItem});
+            this.speedtestToolStripMenuItem,
+            this.createToolStripMenuItem});
             this.modulesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modulesToolStripMenuItem.Name = "modulesToolStripMenuItem";
             this.modulesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
@@ -133,7 +135,7 @@
             // 
             this.basepathMoverToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.basepathMoverToolStripMenuItem.Name = "basepathMoverToolStripMenuItem";
-            this.basepathMoverToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.basepathMoverToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.basepathMoverToolStripMenuItem.Text = "Basepath Mover";
             this.basepathMoverToolStripMenuItem.Click += new System.EventHandler(this.basepathMoverToolStripMenuItem_Click);
             // 
@@ -141,7 +143,7 @@
             // 
             this.iPLookupToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iPLookupToolStripMenuItem.Name = "iPLookupToolStripMenuItem";
-            this.iPLookupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.iPLookupToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.iPLookupToolStripMenuItem.Text = "IP Lookup";
             this.iPLookupToolStripMenuItem.Click += new System.EventHandler(this.iPLookupToolStripMenuItem_Click);
             // 
@@ -149,7 +151,7 @@
             // 
             this.pHPDocSearchToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pHPDocSearchToolStripMenuItem1.Name = "pHPDocSearchToolStripMenuItem1";
-            this.pHPDocSearchToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.pHPDocSearchToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
             this.pHPDocSearchToolStripMenuItem1.Text = "PHP Doc Search";
             this.pHPDocSearchToolStripMenuItem1.Click += new System.EventHandler(this.pHPDocSearchToolStripMenuItem1_Click);
             // 
@@ -157,7 +159,7 @@
             // 
             this.spotifyDownloadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spotifyDownloadToolStripMenuItem.Name = "spotifyDownloadToolStripMenuItem";
-            this.spotifyDownloadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.spotifyDownloadToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.spotifyDownloadToolStripMenuItem.Text = "Spotify Download";
             this.spotifyDownloadToolStripMenuItem.Click += new System.EventHandler(this.spotifyDownloadToolStripMenuItem_Click);
             // 
@@ -165,9 +167,17 @@
             // 
             this.toolStripMenuItem5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(186, 22);
             this.toolStripMenuItem5.Text = "Youtube Download";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
+            // 
+            // speedtestToolStripMenuItem
+            // 
+            this.speedtestToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.speedtestToolStripMenuItem.Name = "speedtestToolStripMenuItem";
+            this.speedtestToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.speedtestToolStripMenuItem.Text = "Speedtest";
+            this.speedtestToolStripMenuItem.Click += new System.EventHandler(this.speedtestToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -199,13 +209,13 @@
             this.CloseButton.Text = "Beenden";
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
-            // speedtestToolStripMenuItem
+            // createToolStripMenuItem
             // 
-            this.speedtestToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.speedtestToolStripMenuItem.Name = "speedtestToolStripMenuItem";
-            this.speedtestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.speedtestToolStripMenuItem.Text = "Speedtest";
-            this.speedtestToolStripMenuItem.Click += new System.EventHandler(this.speedtestToolStripMenuItem_Click);
+            this.createToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createToolStripMenuItem.Name = "createToolStripMenuItem";
+            this.createToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.createToolStripMenuItem.Text = "Create Watch2Gether";
+            this.createToolStripMenuItem.Click += new System.EventHandler(this.createToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -242,6 +252,7 @@
         internal System.Windows.Forms.NotifyIcon MainNotify;
         internal System.Windows.Forms.ContextMenuStrip NotifyMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem speedtestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createToolStripMenuItem;
     }
 }
 

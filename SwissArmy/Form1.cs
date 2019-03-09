@@ -110,5 +110,11 @@ namespace SwissArmy
             Management<Speedtest> modInit = Management<Speedtest>.InitModule();
             modInit.RunModule();
         }
+
+        private void createToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Management<Watch2Gether> modInit = Management<Watch2Gether>.InitModule();
+            modInit.RunModule();
+        }
     }
 }

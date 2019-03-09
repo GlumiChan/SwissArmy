@@ -73,6 +73,7 @@
     <Compile Include="Modules\PHPDocs.cs" />
     <Compile Include="Modules\Speedtest.cs" />
     <Compile Include="Modules\SpotifyDownload.cs" />
+    <Compile Include="Modules\Watch2Gether.cs" />
     <Compile Include="Modules\YoutubeDownloader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

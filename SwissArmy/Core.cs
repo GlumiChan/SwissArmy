@@ -52,12 +52,35 @@ namespace SwissArmy
                 threadPool[key].Abort();
             }
         }
+        public static string DoCustomRequest(string url, string postData, string method = "GET")
+        {
+            ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
+            var request = (HttpWebRequest)WebRequest.Create(url);
+            request.Proxy = null;
+            var data = Encoding.ASCII.GetBytes(postData);
+
+            request.Method = method;
+            request.ContentType = "application/x-www-form-urlencoded";
+            request.ContentLength = data.Length;
+            request.AllowAutoRedirect = true;
+
+            using (var stream = request.GetRequestStream())
+            {
+                stream.Write(data, 0, data.Length);
+            }
+
+            var response = (HttpWebResponse)request.GetResponse();
+            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+            return responseString;
+        }
+
         public static string DoRequest(string url)
         {
             try
             {
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-                request.AllowAutoRedirect = true;
+                request.Proxy = null;
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
                 Stream receiveStream = response.GetResponseStream();

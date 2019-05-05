@@ -54,6 +54,14 @@ namespace SwissArmy
         }
         public static string DoCustomRequest(string url, string postData, string method = "GET")
         {
+            var response = GetCustomResponse(url, postData, method);
+            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+            return responseString;
+        }
+
+        public static HttpWebResponse GetCustomResponse(string url, string postData, string method = "GET")
+        {
             ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
             var request = (HttpWebRequest)WebRequest.Create(url);
             request.Proxy = null;
@@ -70,9 +78,7 @@ namespace SwissArmy
             }
 
             var response = (HttpWebResponse)request.GetResponse();
-            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
-
-            return responseString;
+            return response;
         }
 
         public static string DoRequest(string url)

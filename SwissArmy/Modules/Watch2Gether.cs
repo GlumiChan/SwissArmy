@@ -8,10 +8,11 @@ namespace SwissArmy.Modules
         {
             try
             {
-                string resp = Core.DoCustomRequest("https://www.watch2gether.com/rooms/create", "utf8=✓", "POST");
-                string room = Core.StringBetween("og:url\" content=\"", "\">", resp);
+                var resp = Core.GetCustomResponse("https://www.watch2gether.com/rooms/create", "utf8=✓", "POST");
+
+                string room = resp.ResponseUri.AbsoluteUri;
                 Clipboard.SetText(room);
-                MessageBox.Show("Copied");
+                System.Diagnostics.Process.Start(room);
             }
             catch
             {
